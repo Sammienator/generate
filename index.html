@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menucool Css Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link href="style.css" rel="stylesheet" />
+    <style>
+        body {
+            margin:0;
+            background:#666666;
+        }
+        #menuDemo { text-align:center; padding:30px 8px; }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div id="menuDemo">
+            <!--start CssMenu-->
+            <div class="menu-icon-wrapper">
+                <div class="menu-icon" onclick="toggleCssMenu(this)">
+                    <div class="three-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Creative</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <section class="section">
+                <div class="text">
+                    <h1> This Is Art</h1>
+                    <h2>https fonts.googleapis.com/css family= Oswald.  https fonts.googleapis.com/css family= Oswald </h2>
+            
+                    <p> https fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswald</p>
+                    <p> https fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswald</p>
+                    <p> https fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswaldhttps fonts.googleapis.com/css family= Oswald</p>
+                </div>
+            </section> </div>
+
+
+
+
+
+
+
+<script>
+    function toggleCssMenu(icon) {
+        var cssmenu = document.getElementById('cssmenu');
+        if (icon.className.indexOf('active') == -1) {
+            icon.className = 'menu-icon active';
+			cssmenu.style.display = "block";
+			setTimeout(function(){cssmenu.className = 'active';},0);            
+        }
+        else {
+            icon.className = 'menu-icon';
+			cssmenu.className = '';
+			setTimeout(function(){cssmenu.style.display = "none";},411); 
+        }
+    }
+</script>
+<!--end CssMenu-->
+</div>
+</body>
+</html>
